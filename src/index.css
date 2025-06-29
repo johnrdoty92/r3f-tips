@@ -26,6 +26,10 @@ body {
   height: 100%;
 }
 
+#root {
+  height: 100%;
+}
+
 h1 {
   padding: 1em;
   font-size: 1.2em;
@@ -70,6 +74,11 @@ a:hover {
 a:focus,
 a:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
 }
 
 @media (prefers-color-scheme: light) {
