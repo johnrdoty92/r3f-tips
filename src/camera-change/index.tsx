@@ -18,6 +18,7 @@ const Cube = () => {
  useFrame((_, delta) => {
   meshRef.current.rotation.y += delta;
  });
+
  return (
   <mesh
    ref={meshRef}
