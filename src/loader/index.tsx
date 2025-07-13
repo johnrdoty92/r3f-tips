@@ -23,7 +23,7 @@ export const Loader = () => {
    <div className="progress-bar" ref={progressBar}>
     <div></div>
    </div>
-   <Canvas>
+   <Canvas camera={{ position: [0, 0, 3] }}>
     <directionalLight
      intensity={1.5}
      position={[2, 1, 2]}
