@@ -1,15 +1,26 @@
 import { CameraControls } from "@react-three/drei";
-import { Canvas, useThree } from "@react-three/fiber";
 import {
+ Canvas,
+ useFrame,
+ useThree,
+} from "@react-three/fiber";
+import { useRef } from "react";
+import {
+ Mesh,
  OrthographicCamera,
  PerspectiveCamera,
 } from "three";
 
 const Cube = () => {
  const { set } = useThree();
+ const meshRef = useRef<Mesh>(null!);
 
+ useFrame((_, delta) => {
+  meshRef.current.rotation.y += delta;
+ });
  return (
   <mesh
+   ref={meshRef}
    rotation={[Math.PI / 5, Math.PI / 4, 0]}
    onClick={() =>
     set(({ camera, size }) => {
@@ -42,7 +53,7 @@ const Cube = () => {
     })
    }
   >
-   <boxGeometry />
+   <boxGeometry args={[3, 3, 3]} />
    <meshStandardMaterial color="cyan" />
   </mesh>
  );
