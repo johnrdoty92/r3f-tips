@@ -1,4 +1,4 @@
-import monkey from "./Monkey.glb?url";
+import monkey from "../assets/Monkey.glb?url";
 import {
  useFrame,
  useLoader,

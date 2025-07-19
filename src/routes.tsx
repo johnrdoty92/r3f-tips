@@ -2,6 +2,7 @@ import App from "./App";
 import { CameraChange } from "./camera-change";
 import { Events } from "./events";
 import { Loader } from "./loader";
+import { Materials } from "./materials";
 import { QuickStart } from "./quick-start";
 
 export const routes = [
@@ -13,4 +14,5 @@ export const routes = [
   element: <CameraChange />,
  },
  { path: "/loader", element: <Loader /> },
+ { path: "/materials", element: <Materials /> },
 ];
