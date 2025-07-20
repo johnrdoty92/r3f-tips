@@ -5,6 +5,7 @@ import { Geometries } from "./geometries";
 import { Loader } from "./loader";
 import { Materials } from "./materials";
 import { QuickStart } from "./quick-start";
+import { Shadows } from "./shadows";
 
 export const routes = [
  { path: "/", element: <App /> },
@@ -17,4 +18,5 @@ export const routes = [
  { path: "/loader", element: <Loader /> },
  { path: "/materials", element: <Materials /> },
  { path: "/geometries", element: <Geometries /> },
+ { path: "/shadows", element: <Shadows /> },
 ];
