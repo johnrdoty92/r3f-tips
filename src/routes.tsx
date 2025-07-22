@@ -1,4 +1,5 @@
 import App from "./App";
+import { Ascii } from "./ascii-effect";
 import { CameraChange } from "./camera-change";
 import { Events } from "./events";
 import { Geometries } from "./geometries";
@@ -19,4 +20,5 @@ export const routes = [
  { path: "/materials", element: <Materials /> },
  { path: "/geometries", element: <Geometries /> },
  { path: "/shadows", element: <Shadows /> },
+ { path: "/ascii-effect", element: <Ascii /> },
 ];
