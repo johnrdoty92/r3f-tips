@@ -6,6 +6,7 @@ import { Geometries } from "./geometries";
 import { Loader } from "./loader";
 import { Materials } from "./materials";
 import { QuickStart } from "./quick-start";
+import { ScrollAnimations } from "./scroll-animations";
 import { Shadows } from "./shadows";
 
 export const routes = [
@@ -21,4 +22,8 @@ export const routes = [
  { path: "/geometries", element: <Geometries /> },
  { path: "/shadows", element: <Shadows /> },
  { path: "/ascii-effect", element: <Ascii /> },
+ {
+  path: "/scroll-animations",
+  element: <ScrollAnimations />,
+ },
 ];
