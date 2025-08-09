@@ -3,6 +3,7 @@ import { Ascii } from "./ascii-effect";
 import { CameraChange } from "./camera-change";
 import { EnvironmentMaps } from "./environment-maps";
 import { Events } from "./events";
+import { Fog } from "./fog";
 import { Geometries } from "./geometries";
 import { Loader } from "./loader";
 import { Materials } from "./materials";
@@ -31,4 +32,5 @@ export const routes = [
   path: "/environment-maps",
   element: <EnvironmentMaps />,
  },
+ { path: "/fog", element: <Fog /> },
 ];
