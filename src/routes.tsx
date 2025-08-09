@@ -1,6 +1,7 @@
 import App from "./App";
 import { Ascii } from "./ascii-effect";
 import { CameraChange } from "./camera-change";
+import { EnvironmentMaps } from "./environment-maps";
 import { Events } from "./events";
 import { Geometries } from "./geometries";
 import { Loader } from "./loader";
@@ -25,5 +26,9 @@ export const routes = [
  {
   path: "/scroll-animations",
   element: <ScrollAnimations />,
+ },
+ {
+  path: "/environment-maps",
+  element: <EnvironmentMaps />,
  },
 ];
