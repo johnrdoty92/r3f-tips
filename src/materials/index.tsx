@@ -88,7 +88,7 @@ const Model = () => {
  );
 };
 
-export const Materials = () => {
+const Materials = () => {
  return (
   <Canvas camera={{ position: [0, 0, 2.5] }}>
    <directionalLight
@@ -101,3 +101,5 @@ export const Materials = () => {
   </Canvas>
  );
 };
+
+export { Materials as Component };

@@ -66,7 +66,7 @@ const endRotation = new Vector3(
  0,
 );
 
-export const ScrollAnimations = () => {
+const ScrollAnimations = () => {
  const ref = useRef<Mesh>(null!);
  return (
   <>
@@ -96,3 +96,5 @@ export const ScrollAnimations = () => {
   </>
  );
 };
+
+export { ScrollAnimations as Component };

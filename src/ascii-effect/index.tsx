@@ -29,7 +29,7 @@ const Model = () => {
  );
 };
 
-export const Ascii = () => {
+const Ascii = () => {
  return (
   <Canvas
    gl={(defaultProps) => {
@@ -72,3 +72,5 @@ export const Ascii = () => {
   </Canvas>
  );
 };
+
+export { Ascii as Component };

@@ -144,7 +144,7 @@ const InteractiveMesh = () => {
  );
 };
 
-export const Geometries = () => {
+const Geometries = () => {
  return (
   <Canvas>
    <directionalLight
@@ -155,3 +155,5 @@ export const Geometries = () => {
   </Canvas>
  );
 };
+
+export { Geometries as Component };

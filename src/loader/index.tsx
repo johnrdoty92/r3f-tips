@@ -2,7 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef } from "react";
 import { Model } from "./Monkey";
 
-export const Loader = () => {
+const Loader = () => {
  const progressBar = useRef<HTMLDivElement>(null!);
 
  const handleProgressUpdate = (value: number) => {
@@ -35,3 +35,5 @@ export const Loader = () => {
   </>
  );
 };
+
+export { Loader as Component };

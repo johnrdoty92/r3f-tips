@@ -2,7 +2,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import type { Mesh } from "three";
 
-export const QuickStart = () => {
+const QuickStart = () => {
  return (
   <Canvas>
    <Cube />
@@ -25,3 +25,5 @@ const Cube = () => {
   </mesh>
  );
 };
+
+export { QuickStart as Component };

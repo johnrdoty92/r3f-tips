@@ -50,7 +50,7 @@ const Element = () => {
  );
 };
 
-export const EnvironmentMaps = () => {
+const EnvironmentMaps = () => {
  return (
   <Canvas>
    <Element />
@@ -61,3 +61,5 @@ export const EnvironmentMaps = () => {
   </Canvas>
  );
 };
+
+export { EnvironmentMaps as Component };

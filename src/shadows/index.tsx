@@ -74,7 +74,7 @@ const Floor = (props: ThreeElements["mesh"]) => {
  );
 };
 
-export const Shadows = () => {
+const Shadows = () => {
  return (
   <Canvas shadows camera={{ position: [0, 5, 5] }}>
    <Light castShadow />
@@ -84,3 +84,5 @@ export const Shadows = () => {
   </Canvas>
  );
 };
+
+export { Shadows as Component };

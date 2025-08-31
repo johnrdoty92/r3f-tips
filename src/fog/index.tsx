@@ -39,7 +39,7 @@ const LegoBatman = () => {
  );
 };
 
-export const Fog = () => {
+const Fog = () => {
  return (
   <Canvas>
    <Suspense>
@@ -49,3 +49,5 @@ export const Fog = () => {
   </Canvas>
  );
 };
+
+export { Fog as Component };

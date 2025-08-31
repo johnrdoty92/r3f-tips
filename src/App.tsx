@@ -17,7 +17,7 @@ function App() {
   <div className="home">
    <h1>React Three Fiber Tips</h1>
    <nav>
-    {routes
+    {routes[0].children
      .filter(({ path }) => path !== "/")
      .map(({ path }) => (
       <Link to={path}>{getLinkText(path)}</Link>
@@ -27,4 +27,4 @@ function App() {
  );
 }
 
-export default App;
+export { App as Component };

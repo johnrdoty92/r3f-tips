@@ -37,7 +37,7 @@ const Sphere = ({
  );
 };
 
-export const Events = () => {
+const Events = () => {
  return (
   <Canvas>
    <Sphere position-x={-2} color="red" />
@@ -48,3 +48,5 @@ export const Events = () => {
   </Canvas>
  );
 };
+
+export { Events as Component };

@@ -60,7 +60,7 @@ const Cube = () => {
  );
 };
 
-export const CameraChange = () => {
+const CameraChange = () => {
  return (
   <Canvas>
    <Cube />
@@ -70,3 +70,5 @@ export const CameraChange = () => {
   </Canvas>
  );
 };
+
+export { CameraChange as Component };
