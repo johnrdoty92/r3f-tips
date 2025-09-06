@@ -48,6 +48,14 @@ export const routes = [
     lazy: () => import("./environment-maps"),
    },
    { path: "/fog", lazy: () => import("./fog") },
+   {
+    path: "/instancing",
+    lazy: () => import("./instancing"),
+   },
+   {
+    path: "/instancing-3d-models",
+    lazy: () => import("./instancing-gltf"),
+   },
   ],
  },
 ] as const satisfies RouteObject[];
