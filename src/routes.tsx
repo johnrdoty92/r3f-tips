@@ -60,6 +60,10 @@ export const routes = [
     path: "/basic-physics",
     lazy: () => import("./basic-physics"),
    },
+   {
+    path: "/animations",
+    lazy: () => import("./animations"),
+   },
   ],
  },
 ] as const satisfies RouteObject[];
